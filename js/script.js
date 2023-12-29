@@ -117,10 +117,15 @@ const mozRule = document.querySelector("#mozRule span");
 const boxShadow = new BoxShadowGenerator(horizontal,horizontalRef,vertical,verticalRef,blur,blurRef,spread,spreadRef,color,colorRef, boxColor,boxColorRef,opacity,opacityRef,inset,previewBox,rule,webkitRule,mozRule);
 
 
-console.log(boxShadow);
 
 //Events
 horizontal.addEventListener("input", (e) =>{
+    const value = e.target.value;
+
+    boxShadow.updateValue("horizontal", value);
+})
+
+horizontalRef.addEventListener("keyup", (e) =>{
     const value = e.target.value;
 
     boxShadow.updateValue("horizontal", value);
@@ -131,7 +136,20 @@ vertical.addEventListener("input", (e) =>{
 
     boxShadow.updateValue("vertical", value);
 })
+
+verticalRef.addEventListener("keyup", (e) =>{
+    const value = e.target.value;
+
+    boxShadow.updateValue("vertical", value);
+})
+
 blur.addEventListener("input", (e) =>{
+    const value = e.target.value;
+
+    boxShadow.updateValue("blur", value);
+})
+
+blurRef.addEventListener("keyup", (e) =>{
     const value = e.target.value;
 
     boxShadow.updateValue("blur", value);
@@ -143,12 +161,23 @@ spread.addEventListener("input", (e) =>{
     boxShadow.updateValue("spread", value);
 })
 
+spreadRef.addEventListener("keyup", (e) =>{
+    const value = e.target.value;
+
+    boxShadow.updateValue("spread", value);
+})
+
 color.addEventListener("input", (e) =>{
     const value = e.target.value;
 
     boxShadow.updateValue("color", value);
 })
 
+colorRef.addEventListener("keyup", (e) =>{
+    const value = e.target.value.toUppercase();
+
+    boxShadow.updateValue("color", value);
+})
 
 boxColor.addEventListener("input", (e) =>{
     const value = e.target.value;
@@ -156,13 +185,22 @@ boxColor.addEventListener("input", (e) =>{
     boxShadow.updateValue("boxColor", value);
 });
 
+boxColorRef.addEventListener("keyup", (e) =>{
+    const value = e.target.value.toUppercase();
+
+    boxShadow.updateValue("boxColor", value);
+})
 
 opacity.addEventListener("input", (e) =>{
     const value = e.target.value;
 
     boxShadow.updateValue("opacity", value);
 });
+opacityRef.addEventListener("keyup", (e) =>{
+    const value = e.target.value;
 
+    boxShadow.updateValue("opacity", value);
+})
 
 inset.addEventListener("input", (e) =>{
     const value = e.target.checked;
