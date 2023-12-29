@@ -13,7 +13,7 @@ A simple web-based tool for generating CSS box shadow effects. This tool allows 
 - Copy generated CSS rules to the clipboard
   
 ## Demo
-You can try the Box Shadow Generator live here (insert the link to your live demo if applicable).
+You can try the Box Shadow Generator live here [https://alexandreminoru.github.io/Box-Shadow-Generator/](https://alexandreminoru.github.io/Box-Shadow-Generator/).
 
 ## Getting Started
 Clone the repository:
