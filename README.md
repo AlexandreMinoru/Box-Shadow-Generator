@@ -48,5 +48,3 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 - Built with HTML, CSS, and JavaScript.
 - Inspired by the need for a simple and interactive box shadow generator.
-- Make sure to replace the placeholder URLs, such as the live demo link and the GitHub repository link, with the actual URLs once you have them. Additionally, consider adding a license
-- file (e.g., LICENSE) to specify the terms under which others can use or contribute to your project.
