@@ -174,8 +174,8 @@ color.addEventListener("input", (e) =>{
 })
 
 colorRef.addEventListener("keyup", (e) =>{
-    const value = e.target.value.toUppercase();
-
+    var value = e.target.value;
+    value.toUpperCase();
     boxShadow.updateValue("color", value);
 })
 
@@ -186,10 +186,10 @@ boxColor.addEventListener("input", (e) =>{
 });
 
 boxColorRef.addEventListener("keyup", (e) =>{
-    const value = e.target.value.toUppercase();
-
+    var value = e.target.value;
+    value.toUpperCase();
     boxShadow.updateValue("boxColor", value);
-})
+});
 
 opacity.addEventListener("input", (e) =>{
     const value = e.target.value;
